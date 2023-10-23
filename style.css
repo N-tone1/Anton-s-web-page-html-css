@@ -1,0 +1,259 @@
+body{
+    display: block;
+    background-color: #EADBC8;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.div{
+    display: block;
+}
+.top-image{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-content: center;
+}
+.top-image img{
+   border-radius: 50%;
+   margin-top: 280px;
+   opacity: 0.5;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.top-container{   
+    height: 100vh;
+    width: auto;
+    position: relative;
+    border-radius: 5px;
+}
+.h1-text > h1 { /*this is pointer with .h1-text class and h1 included in that class*/
+    
+    position: absolute;
+    color: black;
+    top: 150px;
+    font-size: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+       
+    
+}
+
+
+.h1-text > h2 { /*this is pointer with .h1-text class and h2 included in that class*/
+    
+    position: absolute;
+    
+    top: 450px;;
+    left: 50%;
+    transform: translateX(-50%);
+       
+    
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: -200px;
+}
+.arrow img{
+    height: 220px;
+    width: 190px;
+}
+
+.h1-text {
+    color: black;
+    
+    padding-bottom: 20px;
+    text-align: center;
+    
+   
+}
+.middle-container{
+    background-color: #EADBC8;
+    color: black;
+    border-radius: 5px;
+}
+.profile-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.my-profile-pic{
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.intro{
+    display: block;
+    width: 40%;
+    text-align: center;
+}
+  
+.skill-grid {
+    display: grid;
+    grid-template-areas: 'top-left top-right' 'bottom-left bottom-right';
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; /* Corrected */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  
+  .skill-grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 50px;
+  
+  
+}
+  
+
+.up-left{
+    display: flex;
+    grid-area: top-left;
+    
+    
+    
+}
+.text-discription{
+    flex:1;
+    margin-left: 20px;
+    }
+.up-right{
+    grid-area: top-right;
+    
+}
+.down-left{
+    grid-area: bottom-left;
+    
+}
+.down-right{
+    grid-area: bottom-right;
+    
+}
+.skill-grid img {/* if i want to chose an img tag, i don't need to use selector*/
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.skill-container h2{
+    text-align: center;
+}
+hr{
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+    
+}
+.contact-container{
+ text-align: center;
+}
+.contact-container > p{
+    margin-bottom: 30px;
+   }
+   
+
+   .btn {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding to control button size */
+    background-color: #102C57; /* Button background color */
+    color: #fff; /* Button text color */
+    border: 1px solid #102C57; /* Button border color */
+    border-radius: 5px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline for links */
+    text-align: center; /* Center text horizontally */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+
+   
+.last-container{ /*this is footer that i called as class last-container*/
+    background-color: #102C57;
+    border-radius: 5px;
+    
+    height: 200px;
+}
+.footer-container{
+    margin-top: 50px;
+    padding: 50px;;
+    color: #EADBC8;
+    text-align: center;
+}
+a{
+    color: #EADBC8;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 20px 10px;
+}
+@media screen and (max-width: 768px) {
+    .h1-text > h1 {
+      font-size: 3rem;
+    }
+  
+    .h1-text > h2 {
+      font-size: 1.5rem;
+    }
+  
+    .intro {
+      width: 90%;
+    }
+  
+    .skill-grid > div {
+      width: 90%;
+      margin-left: 0;
+    }
+  
+    .skill-grid img {
+      max-width: 100%;
+    }
+  
+    hr {
+      width: 10%;
+      margin: 50px auto;
+    }
+  
+    .contact-container > p {
+      margin-bottom: 20px;
+    }
+  
+    a {
+      font-size: 18px;
+      margin: 10px;
+    }
+  }
+  /* Add responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .skill-grid {
+      grid-template-areas:
+        'top-left'
+        'top-right'
+        'bottom-left'
+        'bottom-right';
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 10px; /* Adjust as needed */
+    }
+    
+    .skill-grid > div {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
